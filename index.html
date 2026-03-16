@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sebat — Gizlilik Politikası</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #1a1a2e;
+    background: #faf9f6;
+    padding: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 24px 60px;
+  }
+  header {
+    text-align: center;
+    padding: 40px 24px 30px;
+    background: linear-gradient(135deg, #1A1A2E 0%, #16213E 100%);
+    color: #fff;
+  }
+  header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+  header .subtitle {
+    font-size: 18px;
+    color: #4DD0E1;
+    font-weight: 600;
+  }
+  header .date {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    margin-top: 12px;
+  }
+
+  h2 {
+    font-size: 20px;
+    color: #1A1A2E;
+    margin: 36px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #4DD0E1;
+  }
+  h3 {
+    font-size: 16px;
+    color: #26C6DA;
+    margin: 20px 0 8px;
+  }
+  p { margin: 8px 0 12px; }
+  ul, ol { margin: 8px 0 14px 20px; }
+  li { margin: 4px 0; }
+  strong { color: #1A1A2E; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0 20px;
+    font-size: 14px;
+  }
+  th {
+    background: #1A1A2E;
+    color: #fff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 600;
+  }
+  td {
+    padding: 9px 12px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  tr:nth-child(even) { background: #f4f4f2; }
+
+  .highlight {
+    background: #e3f2fd;
+    border-left: 4px solid #26C6DA;
+    padding: 14px 18px;
+    border-radius: 6px;
+    margin: 14px 0;
+  }
+  .highlight-green {
+    background: #e8f5e9;
+    border-left: 4px solid #2e7d32;
+    padding: 14px 18px;
+    border-radius: 6px;
+    margin: 14px 0;
+  }
+
+  footer {
+    text-align: center;
+    padding: 30px 24px;
+    background: #1A1A2E;
+    color: rgba(255,255,255,0.6);
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  footer a { color: #4DD0E1; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  a { color: #26C6DA; }
+
+  @media (max-width: 600px) {
+    .container { padding: 24px 16px 40px; }
+    h2 { font-size: 18px; }
+    table { font-size: 13px; }
+    td, th { padding: 7px 8px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>SEBAT</h1>
+  <div class="subtitle">Gizlilik Politikası</div>
+  <div class="date">Son güncelleme: 16 Mart 2026</div>
+</header>
+
+<div class="container">
+
+<!-- 1. GİRİŞ -->
+<h2>1. Giriş</h2>
+<p>
+  Bu gizlilik politikası, <strong>Sebat</strong> mobil uygulamasının ("Uygulama") kişisel verileri nasıl topladığını, kullandığını, sakladığını ve koruduğunu açıklar. Sebat, İslami kişisel gelişim amaçlı bir uygulamadır ve kullanıcılarının gizliliğine büyük önem verir.
+</p>
+<p>
+  Uygulamayı indirip kullanarak bu gizlilik politikasını kabul etmiş sayılırsınız. Politikamızda değişiklik yapıldığında, bu sayfa üzerinden güncellenmiş hali yayınlanacaktır.
+</p>
+
+<div class="highlight-green">
+  <strong>Temel İlkelerimiz:</strong>
+  <ul>
+    <li>Yalnızca uygulamanın çalışması için gerekli verileri toplarız.</li>
+    <li>Kişisel verilerinizi üçüncü taraflarla <strong>paylaşmayız</strong> ve <strong>satmayız</strong>.</li>
+    <li>Uygulamamızda reklam bulunmaz.</li>
+    <li>Verilerinizi istediğiniz zaman silme hakkınız vardır.</li>
+  </ul>
+</div>
+
+<!-- 2. TOPLANAN VERİLER -->
+<h2>2. Toplanan Veriler</h2>
+
+<h3>2.1 Kimlik Doğrulama Verileri</h3>
+<p>Uygulamaya giriş yapmanız durumunda aşağıdaki veriler toplanır:</p>
+
+<table>
+  <tr><th>Veri</th><th>Kaynak</th><th>Amaç</th></tr>
+  <tr><td>E-posta adresi</td><td>Google Hesabı ile giriş</td><td>Hesap kimlik doğrulama</td></tr>
+  <tr><td>Görünen ad</td><td>Google Hesabı ile giriş</td><td>Uygulama içi kişiselleştirme</td></tr>
+  <tr><td>Firebase Kullanıcı Kimliği (UID)</td><td>Otomatik oluşturulur</td><td>Bulut veri senkronizasyonu</td></tr>
+</table>
+
+<p><strong>Misafir girişi:</strong> Google hesabı kullanmadan anonim (misafir) olarak giriş yapabilirsiniz. Bu durumda yalnızca anonim bir Firebase UID oluşturulur; ad veya e-posta gibi kişisel bilgiler toplanmaz.</p>
+
+<h3>2.2 Konum Verileri</h3>
+<table>
+  <tr><th>Veri</th><th>Toplama Şekli</th><th>Amaç</th></tr>
+  <tr><td>GPS koordinatları (enlem/boylam)</td><td>Kullanıcı izniyle, yalnızca ön planda</td><td>Namaz vakitlerinin doğru hesaplanması</td></tr>
+  <tr><td>Seçilen şehir/ilçe</td><td>Kullanıcı seçimi</td><td>Namaz vakitlerinin hesaplanması</td></tr>
+</table>
+
+<div class="highlight">
+  <strong>Önemli:</strong> Konum verisi yalnızca cihazınızda yerel olarak saklanır. Arka planda konum takibi <strong>yapılmaz</strong>. GPS izni yalnızca ilk kullanımda veya "Konumu Güncelle" butonuna bastığınızda istenir.
+</div>
+
+<h3>2.3 Uygulama Kullanım Verileri</h3>
+<p>Uygulama içinde oluşturduğunuz tüm içerikler yalnızca sizin hesabınıza özeldir:</p>
+<ul>
+  <li><strong>İbadet takibi:</strong> Namaz kayıtları, hatim ilerlemesi, zikir sayıları</li>
+  <li><strong>Alışkanlık verileri:</strong> Alışkanlık listeleri, günlük tamamlama kayıtları, seri istatistikleri</li>
+  <li><strong>Kişisel gelişim:</strong> Muhasebe yanıtları, müşahede notları, şükür defteri kayıtları, telkin istatistikleri</li>
+  <li><strong>Planlama:</strong> Günlük görev listeleri, odak/derin çalışma oturum kayıtları</li>
+  <li><strong>Kitaplık:</strong> Kitap listesi, okuma notları, ilerleme kayıtları</li>
+  <li><strong>Uyku takibi:</strong> Yatış/kalkış saatleri, uyku kalitesi puanları</li>
+  <li><strong>Kriz günlüğü:</strong> Nefis terbiyesi kayıtları</li>
+  <li><strong>Tercihler:</strong> Tema, yazı tipi boyutu, bildirim ayarları</li>
+</ul>
+
+<h3>2.4 Fotoğraf Erişimi</h3>
+<p>Uygulama, yalnızca kitaplık bölümünde kitap kapağı görseli seçmek amacıyla cihazınızın fotoğraf galerisine erişim isteyebilir. Seçilen görseller yalnızca cihazınızda yerel olarak saklanır ve herhangi bir sunucuya yüklenmez.</p>
+
+<h3>2.5 Bildirim Verileri</h3>
+<p>Bildirimlerin çalışabilmesi için cihazınızın bildirim sistemiyle etkileşime geçilir. Bildirim tokenleri veya kimlik bilgileri üçüncü taraflarla paylaşılmaz. Bildirimler tamamen cihaz üzerinde zamanlanır ve yönetilir.</p>
+
+<p>Uygulama aşağıdaki bildirim türlerini gönderebilir (hepsi kullanıcı tarafından açılıp kapatılabilir):</p>
+<ul>
+  <li>Namaz vakti hatırlatmaları</li>
+  <li>Sabah/akşam dua hatırlatmaları</li>
+  <li>Alışkanlık ve zincir koruma hatırlatmaları</li>
+  <li>Telkin (meşk) hatırlatmaları</li>
+  <li>Haftalık özet bildirimi</li>
+  <li>Namaz vakti geri sayım çubuğu (Android arka plan servisi)</li>
+</ul>
+
+<h3>2.6 Toplanmayan Veriler</h3>
+<p>Sebat aşağıdaki verileri <strong>toplamaz</strong>:</p>
+<ul>
+  <li>Finansal bilgiler veya ödeme verileri</li>
+  <li>Kişi listesi (rehber)</li>
+  <li>Arama geçmişi veya SMS/MMS</li>
+  <li>Tarayıcı geçmişi</li>
+  <li>Sağlık veya tıbbi veriler</li>
+  <li>Reklam kimlikleri (reklam bulunmamaktadır)</li>
+  <li>Kullanım analitiği veya davranış izleme verileri</li>
+  <li>Arka plan konum takibi</li>
+</ul>
+
+<!-- 3. VERİLERİN KULLANIM AMACI -->
+<h2>3. Verilerin Kullanım Amacı</h2>
+<p>Toplanan veriler yalnızca aşağıdaki amaçlarla kullanılır:</p>
+
+<table>
+  <tr><th>Amaç</th><th>Kullanılan Veri</th></tr>
+  <tr><td>Namaz vakitlerinin hesaplanması</td><td>Konum (GPS veya şehir seçimi)</td></tr>
+  <tr><td>Kullanıcı hesabı oluşturma ve kimlik doğrulama</td><td>Google hesap bilgileri veya anonim UID</td></tr>
+  <tr><td>Verilerinizin cihazlar arası senkronizasyonu</td><td>Firebase UID + uygulama verileri</td></tr>
+  <tr><td>Hatırlatma bildirimleri gönderme</td><td>Bildirim ayarları ve zamanlar</td></tr>
+  <tr><td>Kişisel gelişim istatistiklerinin gösterimi</td><td>Uygulama kullanım verileri</td></tr>
+  <tr><td>Kitap kapağı görseli seçme</td><td>Cihaz galerisi erişimi (yerel)</td></tr>
+</table>
+
+<!-- 4. VERİ SAKLAMA VE GÜVENLİK -->
+<h2>4. Veri Saklama ve Güvenlik</h2>
+
+<h3>4.1 Yerel Depolama</h3>
+<p>Uygulama verileriniz öncelikle cihazınızda (<strong>AsyncStorage</strong>) yerel olarak saklanır. Bu veriler yalnızca cihazınızda bulunur ve internet bağlantısı olmadan da çalışır.</p>
+
+<h3>4.2 Bulut Depolama</h3>
+<p>Giriş yaptığınız takdirde verileriniz <strong>Google Firebase Cloud Firestore</strong> üzerinde şifreli olarak yedeklenir. Bu sayede cihaz değiştirseniz bile verilerinize erişebilirsiniz.</p>
+<ul>
+  <li><strong>Şifreleme:</strong> Tüm veri aktarımları HTTPS/TLS ile şifrelenir (transit halinde şifreleme).</li>
+  <li><strong>Erişim kontrolü:</strong> Firebase güvenlik kuralları, her kullanıcının yalnızca kendi verilerine erişebilmesini sağlar. Başka bir kullanıcının verilerine erişim teknik olarak mümkün değildir.</li>
+  <li><strong>Sunucu konumu:</strong> Firebase altyapısı Google Cloud Platform üzerinde barındırılır.</li>
+</ul>
+
+<h3>4.3 Otomatik Veri Temizliği</h3>
+<p>Uygulama, cihaz depolama alanını korumak amacıyla eski verileri otomatik olarak arşivler:</p>
+<ul>
+  <li>Günlük planlar: 90 gün sonra arşivlenir</li>
+  <li>Odak oturum kayıtları: 180 gün sonra arşivlenir</li>
+  <li>Müşahede ve kriz günlüğü: 365 gün sonra arşivlenir</li>
+</ul>
+<p>Arşivlenen veriler bulut hesabınızda saklanmaya devam eder ancak cihazınızdan kaldırılır.</p>
+
+<h3>4.4 Güvenlik Önlemleri</h3>
+<ul>
+  <li>Firebase Authentication ile kimlik doğrulama</li>
+  <li>Firestore güvenlik kuralları ile kullanıcı bazlı veri izolasyonu</li>
+  <li>HTTPS/TLS ile şifreli veri iletişimi</li>
+  <li>Uygulama içinde hassas verilerin düz metin olarak saklanmaması</li>
+</ul>
+
+<!-- 5. ÜÇÜNCÜ TARAF HİZMETLER -->
+<h2>5. Üçüncü Taraf Hizmetler</h2>
+<p>Uygulama aşağıdaki üçüncü taraf hizmetlerini kullanır:</p>
+
+<table>
+  <tr><th>Hizmet</th><th>Sağlayıcı</th><th>Kullanım Amacı</th><th>Gizlilik Politikası</th></tr>
+  <tr>
+    <td>Firebase Authentication</td>
+    <td>Google LLC</td>
+    <td>Kullanıcı girişi ve kimlik doğrulama</td>
+    <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Gizlilik</a></td>
+  </tr>
+  <tr>
+    <td>Cloud Firestore</td>
+    <td>Google LLC</td>
+    <td>Bulut veri senkronizasyonu ve yedekleme</td>
+    <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Gizlilik</a></td>
+  </tr>
+  <tr>
+    <td>Google Sign-In</td>
+    <td>Google LLC</td>
+    <td>Google hesabıyla hızlı giriş</td>
+    <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik</a></td>
+  </tr>
+</table>
+
+<div class="highlight">
+  <strong>Not:</strong> Uygulama, reklam ağları, analitik hizmetleri (Google Analytics, Firebase Analytics vb.), çökme raporlama araçları veya herhangi bir veri aracı/SDK kullanmamaktadır. Verileriniz yalnızca yukarıda belirtilen kimlik doğrulama ve senkronizasyon amaçlarıyla işlenir.
+</div>
+
+<!-- 6. VERİ PAYLAŞIMI -->
+<h2>6. Veri Paylaşımı</h2>
+<p>Kişisel verileriniz:</p>
+<ul>
+  <li><strong>Satılmaz.</strong></li>
+  <li><strong>Üçüncü taraflarla paylaşılmaz.</strong></li>
+  <li><strong>Reklam amacıyla kullanılmaz.</strong></li>
+  <li><strong>Profil oluşturma veya davranış analizi için kullanılmaz.</strong></li>
+</ul>
+
+<p>Verileriniz yalnızca aşağıdaki istisnai durumlarda paylaşılabilir:</p>
+<ul>
+  <li>Yasal bir zorunluluk durumunda (mahkeme kararı, yasal talep)</li>
+  <li>Kullanıcının açık yazılı onayı ile</li>
+</ul>
+
+<!-- 7. KULLANICI HAKLARI -->
+<h2>7. Kullanıcı Hakları</h2>
+<p>Kullanıcılarımız aşağıdaki haklara sahiptir:</p>
+
+<h3>7.1 Veri Erişimi</h3>
+<p>Uygulama içindeki tüm verilerinizi doğrudan görebilir ve inceleyebilirsiniz. Verileriniz şeffaf bir şekilde uygulama arayüzünde sunulmaktadır.</p>
+
+<h3>7.2 Veri Silme</h3>
+<p>Verilerinizi silmek için:</p>
+<ul>
+  <li><strong>Uygulama içinden:</strong> İlgili bölümlerdeki silme/sıfırlama seçeneklerini kullanabilirsiniz.</li>
+  <li><strong>Hesap silme:</strong> Hesabınızı ve tüm bulut verilerinizi kalıcı olarak silmek için aşağıdaki iletişim adresinden bize ulaşabilirsiniz.</li>
+  <li><strong>Uygulamayı kaldırma:</strong> Uygulamayı cihazınızdan kaldırdığınızda tüm yerel veriler otomatik olarak silinir.</li>
+</ul>
+
+<h3>7.3 Veri Taşınabilirliği</h3>
+<p>Verileriniz Firebase üzerinde kullanıcı kimliğinize bağlı olarak saklanır. Veri dışa aktarım talepleriniz için aşağıdaki iletişim bilgilerinden bize ulaşabilirsiniz.</p>
+
+<h3>7.4 İzinleri Geri Alma</h3>
+<p>Cihazınızın ayarlarından konum, bildirim ve fotoğraf galerisi izinlerini istediğiniz zaman geri alabilirsiniz. İzinlerin geri alınması uygulamanın temel işlevlerini etkileyebilir (örn. konum izni olmadan namaz vakitleri yalnızca manuel şehir seçimiyle hesaplanır).</p>
+
+<!-- 8. ÇEREZLER VE İZLEME -->
+<h2>8. Çerezler ve İzleme</h2>
+<p>Sebat bir mobil uygulamadır ve <strong>çerez (cookie) kullanmaz</strong>. Kullanıcı davranışı izleme, parmak izi (fingerprinting) veya reklam izleme teknolojileri <strong>kullanılmamaktadır</strong>.</p>
+
+<!-- 9. ÇOCUKLARIN GİZLİLİĞİ -->
+<h2>9. Çocukların Gizliliği</h2>
+<p>Sebat, genel kitleye yönelik bir uygulamadır ve özellikle 13 yaşın altındaki çocuklara yönelik tasarlanmamıştır. 13 yaşın altındaki kullanıcılardan bilerek kişisel veri toplamayız. Ebeveynler veya yasal vasiler, çocuklarının kişisel veri paylaştığını fark ederlerse bizimle iletişime geçebilirler ve ilgili veriler derhal silinecektir.</p>
+
+<!-- 10. ANDROID İZİNLERİ -->
+<h2>10. Uygulama İzinleri</h2>
+<p>Uygulama aşağıdaki Android izinlerini kullanır:</p>
+
+<table>
+  <tr><th>İzin</th><th>Kullanım Amacı</th></tr>
+  <tr><td><strong>Konum</strong> (Hassas ve Yaklaşık)</td><td>Namaz vakitlerinin bulunduğunuz konuma göre hesaplanması</td></tr>
+  <tr><td><strong>İnternet</strong></td><td>Firebase ile veri senkronizasyonu</td></tr>
+  <tr><td><strong>Bildirimler</strong></td><td>Namaz vakti ve hatırlatma bildirimleri</td></tr>
+  <tr><td><strong>Kesin Alarm</strong></td><td>Ezan bildirimlerinin dakika hassasiyetinde gönderilmesi</td></tr>
+  <tr><td><strong>Ön Plan Servisi</strong></td><td>Namaz vakti geri sayım çubuğunun sürekli gösterilmesi (Android)</td></tr>
+  <tr><td><strong>Titreşim</strong></td><td>Bildirim ve geri bildirim titreşimleri</td></tr>
+  <tr><td><strong>Ekranı Açık Tutma</strong></td><td>Zamanlayıcı kullanımı sırasında ekranın kapanmaması</td></tr>
+  <tr><td><strong>Fotoğraf Galerisi</strong></td><td>Kitaplık bölümünde kitap kapağı görseli seçme</td></tr>
+  <tr><td><strong>Önyükleme Tamamlandı</strong></td><td>Cihaz yeniden başlatıldığında bildirimlerin yeniden zamanlanması</td></tr>
+</table>
+
+<p>Tüm izinler yalnızca belirtilen amaçlar doğrultusunda kullanılır. Arka planda konum takibi yapılmaz.</p>
+
+<!-- 11. DEĞİŞİKLİKLER -->
+<h2>11. Politika Değişiklikleri</h2>
+<p>Bu gizlilik politikası zaman zaman güncellenebilir. Önemli değişiklikler yapıldığında:</p>
+<ul>
+  <li>Bu sayfadaki "Son güncelleme" tarihi değiştirilecektir.</li>
+  <li>Önemli değişiklikler uygulama içi bildirimle duyurulabilir.</li>
+</ul>
+<p>Politikanın güncel halini her zaman bu sayfadan inceleyebilirsiniz.</p>
+
+<!-- 12. İLETİŞİM -->
+<h2>12. İletişim</h2>
+<p>Gizlilik politikamız hakkında sorularınız, veri silme talepleriniz veya geri bildirimleriniz için bizimle iletişime geçebilirsiniz:</p>
+
+<div class="highlight">
+  <strong>Geliştirici:</strong> Halil İbrahim<br>
+  <strong>E-posta:</strong> <a href="mailto:hedef5839@gmail.com">hedef5839@gmail.com</a><br>
+  <strong>Uygulama:</strong> Sebat — İslami Kişisel Gelişim<br>
+  <strong>Paket Adı:</strong> com.halilibrahim49.Sebat
+</div>
+
+<p>Veri silme talepleriniz en geç <strong>30 gün</strong> içinde işleme alınacaktır.</p>
+
+<!-- 13. YASAL DAYANAK -->
+<h2>13. Yasal Dayanak</h2>
+<p>Bu gizlilik politikası aşağıdaki yasal düzenlemelere uygun olarak hazırlanmıştır:</p>
+<ul>
+  <li><strong>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK)</strong> — Türkiye</li>
+  <li><strong>Avrupa Genel Veri Koruma Tüzüğü (GDPR)</strong> — AB vatandaşları için</li>
+  <li><strong>Google Play Geliştirici Program Politikaları</strong></li>
+</ul>
+
+</div>
+
+<footer>
+  <p>
+    <strong>Sebat</strong> — İslami Kişisel Gelişim Uygulaması<br>
+    &copy; 2026 Tüm hakları saklıdır.<br>
+    <a href="mailto:hedef5839@gmail.com">hedef5839@gmail.com</a>
+  </p>
+</footer>
+
+</body>
+</html>
