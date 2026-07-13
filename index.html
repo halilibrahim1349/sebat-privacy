@@ -92,6 +92,15 @@
     border-radius: 6px;
     margin: 14px 0;
   }
+  .highlight-key {
+    background: #fff8e1;
+    border-left: 4px solid #d4a843;
+    padding: 16px 20px;
+    border-radius: 6px;
+    margin: 18px 0;
+    font-size: 15px;
+  }
+  .highlight-key strong { color: #6b4f00; }
 
   footer {
     text-align: center;
@@ -119,7 +128,7 @@
 <header>
   <h1>SEBAT</h1>
   <div class="subtitle">Gizlilik Politikası</div>
-  <div class="date">Son güncelleme: 6 Nisan 2026</div>
+  <div class="date">Son güncelleme: 13 Temmuz 2026</div>
 </header>
 
 <div class="container">
@@ -127,69 +136,102 @@
 <!-- 1. GİRİŞ -->
 <h2>1. Giriş</h2>
 <p>
-  Bu gizlilik politikası, <strong>Sebat</strong> mobil uygulamasının ("Uygulama") kişisel verileri nasıl topladığını, kullandığını, sakladığını ve koruduğunu açıklar. Sebat, İslami kişisel gelişim amaçlı bir uygulamadır ve kullanıcılarının gizliliğine büyük önem verir.
+  Bu gizlilik politikası, <strong>Sebat</strong> mobil uygulamasının ("Uygulama") kişisel verileri nasıl topladığını, kullandığını, sakladığını ve koruduğunu açıklar. Sebat, İslâmi kişisel gelişim amaçlı bir uygulamadır ve kullanıcılarının gizliliğine en üst düzeyde önem verir.
 </p>
 <p>
-  Uygulamayı indirip kullanarak bu gizlilik politikasını kabul etmiş sayılırsınız. Politikamızda değişiklik yapıldığında, bu sayfa üzerinden güncellenmiş hali yayınlanacaktır.
+  Uygulamayı indirip kullanarak bu gizlilik politikasını kabul etmiş sayılırsınız. Politikamızda değişiklik yapıldığında, bu sayfa üzerinden güncellenmiş hâli yayınlanacaktır.
 </p>
+
+<div class="highlight-key">
+  <strong>EN ÖNEMLİ İLKEMİZ — UÇTAN UCA ŞİFRELEME (E2EE)</strong>
+  <p style="margin-top:8px">
+    Sebat'a girdiğiniz tüm kişisel kayıtlar (alışkanlıklar, namaz, zikir, hatim, muhasebe, müşahede, kriz günlüğü, şükür defteri, kitap notları, telkinler, adım sayar, planlar, odak oturumları ve diğer ibadet/öz-bakış kayıtları) <strong>cihazınızda üretilen bir anahtarla şifrelenir</strong> ve ancak öyle bulutta yedeklenir. Bu anahtar bizimle, sunucumuzla, Google ile veya başka herhangi bir tarafla <strong>asla paylaşılmaz</strong>; cihazınızın güvenli donanımında (Android Keystore / iOS Keychain) saklanır.
+  </p>
+  <p style="margin-top:8px">
+    Sonuç olarak Sebat'ın geliştiricisi (Halil İbrahim) dahi kullanıcıların verilerini <strong>okuyamaz</strong>. Firebase sunucularına bir saldırı olsa bile içerik şifresiz olarak elde edilemez. Bu, WhatsApp ve Signal'in kullandığı koruma seviyesidir.
+  </p>
+</div>
 
 <div class="highlight-green">
   <strong>Temel İlkelerimiz:</strong>
   <ul>
-    <li>Yalnızca uygulamanın çalışması için gerekli verileri toplarız.</li>
-    <li>Kişisel verilerinizi üçüncü taraflarla <strong>paylaşmayız</strong> ve <strong>satmayız</strong>.</li>
-    <li>Uygulamamızda reklam bulunmaz.</li>
-    <li>Verilerinizi istediğiniz zaman silme hakkınız vardır.</li>
+    <li>Verileriniz cihazınızda üretilen kişisel anahtarla <strong>uçtan uca şifrelenir</strong>.</li>
+    <li>Reklam içermez; reklam ağı, SDK'sı veya analitik aracı kullanılmaz.</li>
+    <li>Kişisel verileriniz üçüncü taraflarla <strong>paylaşılmaz</strong> ve <strong>satılmaz</strong>.</li>
+    <li>Yalnızca uygulamanın çalışması için gerekli minimum veri toplanır.</li>
+    <li>Hesabınızı ve tüm bulut verilerinizi uygulama içinden tek tıkla silebilirsiniz.</li>
   </ul>
 </div>
 
-<!-- 2. TOPLANAN VERİLER -->
-<h2>2. Toplanan Veriler</h2>
+<!-- 2. VERİ SORUMLUSU -->
+<h2>2. Veri Sorumlusu (KVKK md. 3)</h2>
+<p>
+  6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında veri sorumlusu sıfatıyla aşağıdaki kişi/yapı yer almaktadır:
+</p>
+<div class="highlight">
+  <strong>Veri Sorumlusu:</strong> Halil İbrahim (bireysel geliştirici)<br>
+  <strong>E-posta:</strong> <a href="mailto:hedef5839@gmail.com">hedef5839@gmail.com</a><br>
+  <strong>Uygulama:</strong> Sebat — İslâmi Kişisel Gelişim<br>
+  <strong>Paket Adı:</strong> com.halilibrahim49.Sebat
+</div>
 
-<h3>2.1 Kimlik Doğrulama Verileri</h3>
+<!-- 3. TOPLANAN VERİLER -->
+<h2>3. Toplanan Veriler</h2>
+
+<h3>3.1 Kimlik Doğrulama Verileri</h3>
 <p>Uygulamaya giriş yapmanız durumunda aşağıdaki veriler toplanır:</p>
 
 <table>
-  <tr><th>Veri</th><th>Kaynak</th><th>Amaç</th></tr>
-  <tr><td>E-posta adresi</td><td>Google Hesabı ile giriş</td><td>Hesap kimlik doğrulama</td></tr>
-  <tr><td>Görünen ad</td><td>Google Hesabı ile giriş</td><td>Uygulama içi kişiselleştirme</td></tr>
-  <tr><td>Firebase Kullanıcı Kimliği (UID)</td><td>Otomatik oluşturulur</td><td>Bulut veri senkronizasyonu</td></tr>
+  <tr><th>Veri</th><th>Kaynak</th><th>Amaç</th><th>Şifrelenir mi?</th></tr>
+  <tr><td>Firebase Kullanıcı Kimliği (UID)</td><td>Otomatik oluşturulur</td><td>Yedek doğrulama (her kullanıcı yalnız kendi kaydına erişebilsin)</td><td>Hayır — kimlik anahtarı; içerik değildir</td></tr>
+  <tr><td>E-posta adresi</td><td>Google Hesabı (opsiyonel)</td><td>Hesap girişi ve cihaz değiştirme</td><td>Google sunucusunda Google'ın politikalarına tabidir; Sebat sunucusunda <strong>saklanmaz</strong></td></tr>
+  <tr><td>Görünen ad</td><td>Google Hesabı (opsiyonel)</td><td>Yalnızca cihaz içinde selâmlama amacıyla — sunucuya yazılırken şifrelenir</td><td>Evet (E2EE)</td></tr>
 </table>
 
-<p><strong>Misafir girişi:</strong> Google hesabı kullanmadan anonim (misafir) olarak giriş yapabilirsiniz. Bu durumda yalnızca anonim bir Firebase UID oluşturulur; ad veya e-posta gibi kişisel bilgiler toplanmaz.</p>
+<p><strong>Misafir girişi:</strong> Google hesabı kullanmadan anonim (misafir) olarak da devam edilebilir. Bu durumda yalnızca anonim bir Firebase UID oluşturulur; ad veya e-posta toplanmaz. Ancak misafir kullanımda <strong>bulut yedek mevcut olmaz</strong> ve telefon kaybolursa veriler kurtarılamaz; bu nedenle Google ile bağlanma şiddetle önerilir.</p>
 
-<h3>2.2 Konum Verileri</h3>
+<h3>3.2 Konum Verileri</h3>
 <table>
-  <tr><th>Veri</th><th>Toplama Şekli</th><th>Amaç</th></tr>
-  <tr><td>GPS koordinatları (enlem/boylam)</td><td>Kullanıcı izniyle, yalnızca ön planda</td><td>Namaz vakitlerinin doğru hesaplanması</td></tr>
-  <tr><td>Seçilen şehir/ilçe</td><td>Kullanıcı seçimi</td><td>Namaz vakitlerinin hesaplanması</td></tr>
+  <tr><th>Veri</th><th>Toplama Şekli</th><th>Amaç</th><th>Şifrelenir mi?</th></tr>
+  <tr><td>GPS koordinatları (enlem/boylam)</td><td>Kullanıcı izniyle, yalnızca ön planda</td><td>Namaz vakitlerinin doğru hesaplanması</td><td>Evet (E2EE) — yedeklendiği taktirde</td></tr>
+  <tr><td>Seçilen şehir/ilçe</td><td>Kullanıcı seçimi</td><td>Namaz vakitlerinin hesaplanması</td><td>Evet (E2EE) — yedeklendiği taktirde</td></tr>
 </table>
 
 <div class="highlight">
-  <strong>Önemli:</strong> Konum verisi yalnızca cihazınızda yerel olarak saklanır. Arka planda konum takibi <strong>yapılmaz</strong>. GPS izni yalnızca ilk kullanımda veya "Konumu Güncelle" butonuna bastığınızda istenir.
+  <strong>Önemli:</strong> Konum verisi yalnızca cihazınızda ve şifreli yedekte saklanır. <strong>Arka planda konum takibi yapılmaz.</strong> GPS izni yalnızca ilk kullanımda veya "Konumu Güncelle" butonuna bastığınızda istenir.
 </div>
 
-<h3>2.3 Uygulama Kullanım Verileri</h3>
-<p>Uygulama içinde oluşturduğunuz tüm içerikler yalnızca sizin hesabınıza özeldir:</p>
+<h3>3.3 Uygulama İçi Kayıtlar (Kişisel ve Hassas Veri)</h3>
+<p>Uygulama içinde oluşturduğunuz tüm içerikler size özeldir ve <strong>uçtan uca şifrelenir</strong> (bkz. Bölüm 4). Sebat'ın geliştiricisi ve hiçbir üçüncü taraf bu içerikleri okuyamaz.</p>
 <ul>
-  <li><strong>İbadet takibi:</strong> Namaz kayıtları, hatim ilerlemesi, zikir sayıları</li>
-  <li><strong>Alışkanlık verileri:</strong> Alışkanlık listeleri, günlük tamamlama kayıtları, seri istatistikleri</li>
-  <li><strong>Kişisel gelişim:</strong> Muhasebe yanıtları, müşahede notları, şükür defteri kayıtları, telkin istatistikleri</li>
-  <li><strong>Planlama:</strong> Günlük görev listeleri, odak/derin çalışma oturum kayıtları</li>
-  <li><strong>Kitaplık:</strong> Kitap listesi, okuma notları, ilerleme kayıtları</li>
-  <li><strong>Uyku takibi:</strong> Yatış/kalkış saatleri, uyku kalitesi puanları</li>
-  <li><strong>Kriz günlüğü:</strong> Nefis terbiyesi kayıtları (kriz türü, atılan adımlar, sonuç)</li>
-  <li><strong>Dijital detoks:</strong> Kullanıcının manuel girdiği günlük ekran süresi, dikkat dağıtan uygulama adları ve tetikleyiciler</li>
-  <li><strong>Hadis ezberleme:</strong> 100 hadis ezberleme durumu ve seviyeleri</li>
-  <li><strong>Tercihler:</strong> Tema, yazı tipi boyutu, bildirim ayarları</li>
+  <li><strong>İbadet takibi:</strong> Namaz kayıtları, kazâ logu, hatim ilerlemesi, zikir sayıları</li>
+  <li><strong>Alışkanlık verileri:</strong> Alışkanlık listeleri, kırma alışkanlıkları, kötü alışkanlık günlüğü, günlük tamamlama logu, zincir/seri ve rozet istatistikleri, alışkanlık güçleri</li>
+  <li><strong>Kişisel gelişim:</strong> Muhasebe (riza/nefs/dikkat/şükür) yanıtları ve notları, müşahede notları, şükür defteri, telkin (meşk) kayıtları ve istatistikleri</li>
+  <li><strong>Akabe & istiğfar:</strong> Akabe günlüğü, istiğfar sayaç logu</li>
+  <li><strong>Sabah/Akşam ezkâr:</strong> Tamamlama ve favori durumları</li>
+  <li><strong>Planlama:</strong> Günlük plan listeleri, program rutinleri, odak/derin çalışma oturum kayıtları</li>
+  <li><strong>Kitaplık:</strong> Kitap listesi, alıntılar ve okuma notları, ilerleme kayıtları</li>
+  <li><strong>Kriz günlüğü:</strong> Nefis terbiyesi kayıtları (kriz türü, atılan adımlar, sonuç ve not)</li>
+  <li><strong>Hadis ezberleme:</strong> Hadis ezberleme durumu ve seviyeleri</li>
+  <li><strong>Adım sayar:</strong> Günlük adım sayısı ve hedef</li>
+  <li><strong>Tercihler:</strong> Bildirim saatleri, telkin saatleri, ezan dakika tercihi, kitaplık ve kazâ hedefleri (E2EE kapsamında)</li>
 </ul>
 
-<h3>2.4 Fotoğraf Erişimi</h3>
-<p>Uygulama, yalnızca kitaplık bölümünde kitap kapağı görseli seçmek amacıyla cihazınızın fotoğraf galerisine erişim isteyebilir. Seçilen görseller yalnızca cihazınızda yerel olarak saklanır ve herhangi bir sunucuya yüklenmez.</p>
+<h3>3.4 Cihaz Tercihleri (Şifrelenmeyen)</h3>
+<p>Aşağıdaki ayarlar hassas veri olmadığı için sade tutulur (şifrelenmez) — yine de yalnızca kendi hesabınızla görülebilir:</p>
+<ul>
+  <li>Tema ve yazı tipi tercihi</li>
+  <li>"Daha" menüsü görünüm modu ve sıralama</li>
+  <li>Yüzen zamanlayıcı boyut çarpanı</li>
+  <li>Premium durumu bayrağı (içerik yok, sadece evet/hayır)</li>
+  <li>Onboarding tamamlandı bayrağı</li>
+</ul>
 
-<h3>2.5 Bildirim Verileri</h3>
-<p>Bildirimlerin çalışabilmesi için cihazınızın bildirim sistemiyle etkileşime geçilir. Bildirim tokenleri veya kimlik bilgileri üçüncü taraflarla paylaşılmaz. Bildirimler tamamen cihaz üzerinde zamanlanır ve yönetilir.</p>
+<h3>3.5 Fotoğraf ve Kamera</h3>
+<p>Kitaplık bölümünde kitap kapağı eklemek istediğinizde Android'in sistem <strong>Fotoğraf Seçici</strong>'si açılır ve yalnızca seçtiğiniz tek görsele erişilir. Uygulama, cihazınızın tüm fotoğraf galerisine erişmek için ayrı bir depolama/medya izni <strong>istemez</strong>. Dilerseniz kapağı <strong>kamera ile de çekebilirsiniz</strong>; kamera yalnızca siz bu işlemi başlattığınızda ve yalnızca o an açılır. Seçilen/çekilen görsel yalnızca cihazınızda yerel olarak saklanır ve <strong>herhangi bir sunucuya yüklenmez</strong>.</p>
 
+<h3>3.6 Bildirim Verileri</h3>
+<p>Bildirimlerin çalışabilmesi için cihazınızın bildirim sistemiyle etkileşime geçilir. Bildirimler <strong>tamamen cihaz üzerinde</strong> zamanlanır; push token sunucuya gönderilmez ve üçüncü taraflarla paylaşılmaz.</p>
 <p>Uygulama aşağıdaki bildirim türlerini gönderebilir (hepsi kullanıcı tarafından açılıp kapatılabilir):</p>
 <ul>
   <li>Namaz vakti hatırlatmaları</li>
@@ -197,69 +239,113 @@
   <li>Alışkanlık ve zinciri kırma hatırlatmaları</li>
   <li>Telkin (meşk) hatırlatmaları</li>
   <li>Haftalık özet bildirimi</li>
-  <li>Namaz vakti geri sayım çubuğu (Android arka plan servisi)</li>
+  <li>Namaz vakti geri sayım çubuğu (Android ön plan servisi)</li>
 </ul>
 
-<h3>2.6 Toplanmayan Veriler</h3>
-<p>Sebat aşağıdaki verileri <strong>toplamaz</strong>:</p>
+<h3>3.7 İnternetten İndirilen İçerik ve Çevrimiçi Hizmetler</h3>
+<p>Bazı içerikler harici sunuculardan indirilir. Bu isteklerde <strong>hiçbir kişisel veri, kimlik veya hesap bilgisi gönderilmez</strong>; her internet bağlantısında olduğu gibi, ilgili sunucu standart web isteği kapsamında IP adresinizi teknik olarak görür:</p>
 <ul>
-  <li>Finansal bilgiler veya ödeme verileri</li>
-  <li>Kişi listesi (rehber)</li>
-  <li>Arama geçmişi veya SMS/MMS</li>
+  <li><strong>Kur'an sayfa görüntüleri:</strong> Diyanet İşleri Başkanlığı sunucularından (kuran.diyanet.gov.tr) indirilir; çevrimdışı kullanım için cihazınıza kaydedilebilir.</li>
+  <li><strong>Hafız ses kayıtları:</strong> Diyanet, everyayah.com ve quran.com sunucularından, yalnızca dinlediğiniz sûre/âyet için istenir.</li>
+  <li><strong>Hava durumu (ana ekran widget'ı):</strong> Seçili konumunuzun koordinatları Open-Meteo servisine (api.open-meteo.com) gönderilir — hesap, anahtar veya kimlik bilgisi <strong>eklenmez</strong>; yanıt yalnızca sıcaklık ve hava kodudur.</li>
+  <li><strong>Hicri tarih doğrulaması:</strong> AlAdhan servisine (api.aladhan.com) yalnızca miladi tarih gönderilir; kişisel veri içermez.</li>
+</ul>
+
+<h3>3.8 Satın Almalar (Premium ve Bağış)</h3>
+<p>Premium abonelik ve isteğe bağlı çay/kahve bağışı ödemeleri tamamen <strong>Google Play</strong> tarafından işlenir. Kart veya banka bilgileriniz Sebat'a <strong>hiçbir zaman ulaşmaz</strong>, görülmez ve saklanmaz.</p>
+<ul>
+  <li>Satın alma durumunun doğrulanması için <strong>RevenueCat</strong> hizmeti kullanılır. RevenueCat'e yalnızca anonim bir uygulama kullanıcı kimliği ve Google Play'in satın alma makbuzu iletilir — ad, e-posta veya uygulama içi içerik <strong>iletilmez</strong>.</li>
+  <li>Bağışlar tek seferliktir, abonelik başlatmaz.</li>
+</ul>
+
+<h3>3.9 Toplanmayan Veriler</h3>
+<p>Sebat aşağıdaki verileri <strong>hiçbir biçimde toplamaz</strong>:</p>
+<ul>
+  <li>Finansal bilgiler (ödemeler Google Play tarafından işlenir; kart bilgileriniz uygulamaya asla ulaşmaz — bkz. 3.8)</li>
+  <li>Kişi listesi (rehber), SMS, arama geçmişi</li>
   <li>Tarayıcı geçmişi</li>
   <li>Sağlık veya tıbbi veriler</li>
-  <li>Reklam kimlikleri (reklam bulunmamaktadır)</li>
-  <li>Kullanım analitiği veya davranış izleme verileri</li>
+  <li>Reklam kimlikleri (reklam içermez)</li>
+  <li>Kullanım analitiği, çökme raporu, davranış izleme</li>
   <li>Arka plan konum takibi</li>
+  <li>Mikrofon kaydı — uygulama mikrofon izni (RECORD_AUDIO) <strong>içermez</strong>; ses kaydı hiçbir koşulda yapılmaz</li>
 </ul>
 
-<!-- 3. VERİLERİN KULLANIM AMACI -->
-<h2>3. Verilerin Kullanım Amacı</h2>
-<p>Toplanan veriler yalnızca aşağıdaki amaçlarla kullanılır:</p>
+<!-- 4. UÇTAN UCA ŞİFRELEME -->
+<h2>4. Uçtan Uca Şifreleme (E2EE)</h2>
 
-<table>
-  <tr><th>Amaç</th><th>Kullanılan Veri</th></tr>
-  <tr><td>Namaz vakitlerinin hesaplanması</td><td>Konum (GPS veya şehir seçimi)</td></tr>
-  <tr><td>Kullanıcı hesabı oluşturma ve kimlik doğrulama</td><td>Google hesap bilgileri veya anonim UID</td></tr>
-  <tr><td>Verilerinizin cihazlar arası senkronizasyonu</td><td>Firebase UID + uygulama verileri</td></tr>
-  <tr><td>Hatırlatma bildirimleri gönderme</td><td>Bildirim ayarları ve zamanlar</td></tr>
-  <tr><td>Kişisel gelişim istatistiklerinin gösterimi</td><td>Uygulama kullanım verileri</td></tr>
-  <tr><td>Kitap kapağı görseli seçme</td><td>Cihaz galerisi erişimi (yerel)</td></tr>
-</table>
-
-<!-- 4. VERİ SAKLAMA VE GÜVENLİK -->
-<h2>4. Veri Saklama ve Güvenlik</h2>
-
-<h3>4.1 Yerel Depolama</h3>
-<p>Uygulama verileriniz öncelikle cihazınızda (<strong>AsyncStorage</strong>) yerel olarak saklanır. Bu veriler yalnızca cihazınızda bulunur ve internet bağlantısı olmadan da çalışır.</p>
-
-<h3>4.2 Bulut Depolama</h3>
-<p>Giriş yaptığınız takdirde verileriniz <strong>Google Firebase Cloud Firestore</strong> üzerinde şifreli olarak yedeklenir. Bu sayede cihaz değiştirseniz bile verilerinize erişebilirsiniz.</p>
+<h3>4.1 Mimari</h3>
+<p>Sebat, kullanıcı içeriğini şu şekilde korur:</p>
 <ul>
-  <li><strong>Şifreleme:</strong> Tüm veri aktarımları HTTPS/TLS ile şifrelenir (transit halinde şifreleme).</li>
-  <li><strong>Erişim kontrolü:</strong> Firebase güvenlik kuralları, her kullanıcının yalnızca kendi verilerine erişebilmesini sağlar. Başka bir kullanıcının verilerine erişim teknik olarak mümkün değildir.</li>
+  <li><strong>Algoritma:</strong> NaCl <code>secretbox</code> (XSalsa20-Poly1305) — Signal Protokolü ile aynı ailedendir; doğrulanmış kimliği (authenticated encryption) sağlar.</li>
+  <li><strong>Master anahtar:</strong> 32 byte (256 bit) rastgele üretilir, cihaz başına benzersizdir.</li>
+  <li><strong>Anahtar saklama:</strong> Android Keystore / iOS Keychain üzerinden donanım-destekli güvenli alanda (Trusted Execution Environment) tutulur. Uygulama dosya sisteminde plain olarak <strong>bulunmaz</strong>.</li>
+  <li><strong>Veri formatı:</strong> Şifreli alanlar Firestore'da <code>{ _enc, _nonce, _v: 1 }</code> şeklinde, base64-kodlu ciphertext olarak saklanır. Anahtar olmadan açılamaz.</li>
+</ul>
+
+<h3>4.2 Geliştiricinin Veri Görmemesi (Zero-Knowledge)</h3>
+<p>
+  Sebat'ın geliştiricisi (Halil İbrahim) Firebase Konsolu'na giriş yapsa veya Firestore'daki tüm dokümanları indirse dahi, her bir kişisel alanın yalnızca <strong>rastgele görünen şifreli baytlarını</strong> görür. Açma anahtarı kullanıcının cihazında olduğu için, içeriği okuyabilmesi <strong>matematiksel olarak mümkün değildir</strong>. Bu, "zero-knowledge" (sıfır bilgi) mimarisinin tanımıdır.
+</p>
+
+<h3>4.3 Yedek Anahtar (Kurtarma) ve Google Drive App-Data</h3>
+<p>
+  Cihazınızdaki anahtar, sizin Google Hesabınıza özel ve <strong>başka uygulamalardan görünmez</strong> bir alan olan <strong>Google Drive "App-Data" klasörüne</strong> (uygulama veri klasörü) otomatik olarak yedeklenir. Bu klasörün özellikleri:
+</p>
+<ul>
+  <li>Sadece Sebat uygulaması erişebilir (Drive arayüzünde dahi görünmez).</li>
+  <li>Google'ın güvenlik altyapısıyla korunur; Google'ın kullanım politikalarına tabidir.</li>
+  <li>Sebat'ın geliştiricisi bu klasöre <strong>erişemez</strong> — yalnızca sizin hesabınız içindir.</li>
+  <li>Telefonunuzu kaybeder veya değiştirirseniz, yeni cihazda aynı Google hesabıyla giriş yapınca anahtar otomatik geri yüklenir ve veriler açılır.</li>
+</ul>
+<p>
+  <strong>Önemli:</strong> Bu yedek, cihazınızı kaybetseniz dahi verilerinize yeniden ulaşabilmeniz için kurtarma anahtarınızı Google hesabınızın gizli uygulama klasöründe saklar. Anahtar bu yedekte kullanılabilir (açık) biçimde tutulduğundan, yedeğin güvenliği <strong>Google hesabınızın güvenliğine</strong> bağlıdır; hesabınızı güçlü bir parola ve iki adımlı doğrulama (2FA) ile korumanızı öneririz. Daha üst düzey gizlilik isterseniz Google bağlamayı kullanmayıp anahtarı yalnızca kendiniz saklayabilirsiniz.
+</p>
+<p>
+  Google hesabı bağlamayı tercih etmezseniz, kurtarma anahtarınızı uygulama içinden (Ayarlar &gt; Güvenlik) görerek manuel olarak güvenli bir yere (notlar, parola yöneticisi) kaydedebilirsiniz.
+</p>
+
+<h3>4.4 Yedek Tazelik Doğrulaması</h3>
+<p>
+  Uygulama her açılışta Google hesabınız bağlıysa Drive yedeğinizin var olup olmadığını doğrular; bozulmuş veya silinmişse otomatik yeniden yükler. Ayarlar &gt; Güvenlik ekranında son yedek tarihini görebilirsiniz.
+</p>
+
+<!-- 5. VERİ SAKLAMA -->
+<h2>5. Veri Saklama Süresi ve Konumu</h2>
+
+<h3>5.1 Yerel Depolama (Cihaz)</h3>
+<p>
+  Uygulama verileriniz öncelikle cihazınızda <strong>AsyncStorage</strong> içinde tutulur. Hassas alanlar burada da E2EE ile şifrelenmiş olarak yazılır; cihazınız root edilse dahi içerik açılamaz.
+</p>
+
+<h3>5.2 Bulut Depolama (Firestore)</h3>
+<p>
+  Giriş yapan kullanıcıların verisi <strong>Google Firebase Cloud Firestore</strong> üzerinde, E2EE ile şifrelenmiş şekilde tutulur (bkz. Bölüm 4).
+</p>
+<ul>
+  <li><strong>Aktarım şifrelemesi:</strong> Tüm veri aktarımları HTTPS/TLS ile şifrelenir.</li>
+  <li><strong>İçerik şifrelemesi:</strong> İçerik, sunucuya gönderilmeden önce cihazda zaten şifrelenmiştir; sunucu yalnızca ciphertext'i depolar.</li>
+  <li><strong>Erişim izolasyonu:</strong> Firebase güvenlik kuralları, her kullanıcının yalnızca kendi kaydına erişmesini garantiler. Başka bir kullanıcının dokümanına erişim <strong>teknik olarak mümkün değildir</strong>.</li>
+  <li><strong>Doküman boyut sınırı:</strong> Kötüye kullanım koruması için tek bir kullanıcı dokümanı 900 KB ile sınırlandırılmıştır.</li>
   <li><strong>Sunucu konumu:</strong> Firebase altyapısı Google Cloud Platform üzerinde barındırılır.</li>
 </ul>
 
-<h3>4.3 Otomatik Veri Temizliği</h3>
-<p>Uygulama, cihaz depolama alanını korumak amacıyla eski verileri otomatik olarak arşivler:</p>
+<h3>5.3 Otomatik Arşivleme</h3>
+<p>Uygulama, cihaz depolama alanını korumak için eski verileri otomatik arşivler:</p>
 <ul>
-  <li>Günlük planlar: 90 gün sonra arşivlenir</li>
+  <li>Günlük planlar (tamamlananlar): 90 gün sonra arşivlenir</li>
   <li>Odak oturum kayıtları: 180 gün sonra arşivlenir</li>
   <li>Müşahede ve kriz günlüğü: 365 gün sonra arşivlenir</li>
 </ul>
-<p>Arşivlenen veriler bulut hesabınızda saklanmaya devam eder ancak cihazınızdan kaldırılır.</p>
+<p>Arşivlenen veriler bulut hesabınızda (yine E2EE ile şifreli olarak) <code>users/{uid}/arsiv</code> alt koleksiyonunda kalır; cihazınızdan kaldırılır.</p>
 
-<h3>4.4 Güvenlik Önlemleri</h3>
-<ul>
-  <li>Firebase Authentication ile kimlik doğrulama</li>
-  <li>Firestore güvenlik kuralları ile kullanıcı bazlı veri izolasyonu</li>
-  <li>HTTPS/TLS ile şifreli veri iletişimi</li>
-  <li>Uygulama içinde hassas verilerin düz metin olarak saklanmaması</li>
-</ul>
+<h3>5.4 Saklama Süresi</h3>
+<p>
+  Veriler, hesap silinene kadar saklanır. Hesap silindiğinde tüm yerel ve buluttaki kullanıcı verileri kalıcı olarak yok edilir; ayrıca cihazdaki şifreleme anahtarı da silinir, böylece Firestore'da olası bir gecikmeyle silinmemiş ciphertext kalsa bile <strong>asla açılamaz</strong>.
+</p>
 
-<!-- 5. ÜÇÜNCÜ TARAF HİZMETLER -->
-<h2>5. Üçüncü Taraf Hizmetler</h2>
+<!-- 6. ÜÇÜNCÜ TARAF HİZMETLER -->
+<h2>6. Üçüncü Taraf Hizmetler</h2>
 <p>Uygulama aşağıdaki üçüncü taraf hizmetlerini kullanır:</p>
 
 <table>
@@ -267,14 +353,20 @@
   <tr>
     <td>Firebase Authentication</td>
     <td>Google LLC</td>
-    <td>Kullanıcı girişi ve kimlik doğrulama</td>
+    <td>Kullanıcı girişi (Google + anonim)</td>
     <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Gizlilik</a></td>
   </tr>
   <tr>
     <td>Cloud Firestore</td>
     <td>Google LLC</td>
-    <td>Bulut veri senkronizasyonu ve yedekleme</td>
+    <td>Şifrelenmiş içerik yedeği</td>
     <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Gizlilik</a></td>
+  </tr>
+  <tr>
+    <td>Google Drive (App-Data)</td>
+    <td>Google LLC</td>
+    <td>Kurtarma anahtarınızın size özel gizli klasöre yedeklenmesi (yalnızca <code>drive.appdata</code> kapsamı)</td>
+    <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik</a></td>
   </tr>
   <tr>
     <td>Google Sign-In</td>
@@ -282,115 +374,152 @@
     <td>Google hesabıyla hızlı giriş</td>
     <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik</a></td>
   </tr>
+  <tr>
+    <td>Google Play Faturalandırma</td>
+    <td>Google LLC</td>
+    <td>Premium abonelik ve bağış ödemelerinin işlenmesi (kart bilgisi Sebat'a ulaşmaz)</td>
+    <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik</a></td>
+  </tr>
+  <tr>
+    <td>RevenueCat</td>
+    <td>RevenueCat, Inc.</td>
+    <td>Satın alma durumunun doğrulanması (anonim kullanıcı kimliği + Play makbuzu; içerik iletilmez)</td>
+    <td><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Gizlilik</a></td>
+  </tr>
+  <tr>
+    <td>Open-Meteo</td>
+    <td>Open-Meteo</td>
+    <td>Ana ekran widget'ında hava durumu (yalnızca seçili konum koordinatı; kimliksiz)</td>
+    <td><a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">Open-Meteo Şartlar</a></td>
+  </tr>
+  <tr>
+    <td>Diyanet / everyayah.com / quran.com</td>
+    <td>İlgili yayıncılar</td>
+    <td>Kur'an sayfa görüntüleri ve hafız ses kayıtlarının indirilmesi (kişisel veri gönderilmez)</td>
+    <td>—</td>
+  </tr>
+  <tr>
+    <td>AlAdhan API</td>
+    <td>Islamic Network</td>
+    <td>Hicri tarih dönüşümü (yalnızca miladi tarih gönderilir)</td>
+    <td><a href="https://aladhan.com/privacy" target="_blank" rel="noopener">AlAdhan Gizlilik</a></td>
+  </tr>
 </table>
 
 <div class="highlight">
-  <strong>Not:</strong> Uygulama, reklam ağları, analitik hizmetleri (Google Analytics, Firebase Analytics vb.), çökme raporlama araçları veya herhangi bir veri aracı/SDK kullanmamaktadır. Verileriniz yalnızca yukarıda belirtilen kimlik doğrulama ve senkronizasyon amaçlarıyla işlenir.
+  <strong>Reklam ve analitik yoktur:</strong> Sebat reklam ağı, analitik servisi (Google Analytics, Firebase Analytics vb.), çökme raporlama aracı veya kullanıcı izleme SDK'sı <strong>kullanmaz</strong>.
 </div>
 
-<!-- 6. VERİ PAYLAŞIMI -->
-<h2>6. Veri Paylaşımı</h2>
+<!-- 7. VERİ PAYLAŞIMI -->
+<h2>7. Veri Paylaşımı</h2>
 <p>Kişisel verileriniz:</p>
 <ul>
   <li><strong>Satılmaz.</strong></li>
-  <li><strong>Üçüncü taraflarla paylaşılmaz.</strong></li>
+  <li><strong>Üçüncü taraflarla paylaşılmaz</strong> (Bölüm 6'daki teknik altyapı hizmetleri hariç).</li>
   <li><strong>Reklam amacıyla kullanılmaz.</strong></li>
   <li><strong>Profil oluşturma veya davranış analizi için kullanılmaz.</strong></li>
 </ul>
+<p>
+  Geliştirici ve teknik altyapı sağlayıcısı, içerik şifrelenmiş olduğu için kullanıcı kayıtlarının içeriğine zaten erişemez. Yasal bir zorunluluk (mahkeme kararı vb.) durumunda yalnızca Firebase UID ve şifreli baytlar paylaşılabilir; içerik anlamlı bir biçimde okunabilir değildir.
+</p>
 
-<p>Verileriniz yalnızca aşağıdaki istisnai durumlarda paylaşılabilir:</p>
+<!-- 8. KVKK KAPSAMINDAKİ HAKLARINIZ -->
+<h2>8. KVKK Madde 11 — Kullanıcı Hakları</h2>
+<p>6698 sayılı KVKK'nın 11. maddesi gereği veri sorumlusuna başvurarak aşağıdaki haklarınızı kullanabilirsiniz:</p>
+<ol>
+  <li>Kişisel verilerinizin <strong>işlenip işlenmediğini öğrenme</strong></li>
+  <li>Kişisel verileriniz işlenmişse buna ilişkin <strong>bilgi talep etme</strong></li>
+  <li>Kişisel verilerin işlenme <strong>amacını ve amacına uygun kullanılıp kullanılmadığını</strong> öğrenme</li>
+  <li>Yurt içinde veya yurt dışında <strong>aktarıldığı üçüncü kişileri</strong> öğrenme</li>
+  <li>Eksik veya yanlış işlenmiş kişisel verilerin <strong>düzeltilmesini</strong> isteme</li>
+  <li>KVKK'nın 7. maddesinde öngörülen şartlar çerçevesinde kişisel verilerin <strong>silinmesini veya yok edilmesini</strong> isteme</li>
+  <li>Düzeltme/silme işlemlerinin verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme</li>
+  <li>İşlenen verilerin münhasıran otomatik sistemlerle analiz edilmesi suretiyle aleyhinize bir sonuç doğmasına <strong>itiraz etme</strong> (Sebat böyle bir otomatik karar verme süreci uygulamaz)</li>
+  <li>Kişisel verilerin kanuna aykırı işlenmesi sebebiyle zarara uğramanız hâlinde zararın <strong>giderilmesini talep etme</strong></li>
+</ol>
+
+<h3>8.1 Bu Hakları Nasıl Kullanırsınız?</h3>
 <ul>
-  <li>Yasal bir zorunluluk durumunda (mahkeme kararı, yasal talep)</li>
-  <li>Kullanıcının açık yazılı onayı ile</li>
+  <li><strong>Uygulama içinden veri görüntüleme:</strong> Tüm verileriniz şeffaf şekilde uygulama arayüzünde sunulur — listelerde, geçmişte, istatistiklerde.</li>
+  <li><strong>Uygulama içinden silme:</strong> Ayarlar &gt; Hesabım &gt; "Hesabı Sil" butonu ile tek tıkla hem bulut hesabınızı hem yerel veriyi hem de şifreleme anahtarınızı kalıcı olarak silebilirsiniz.</li>
+  <li><strong>Diğer talepler için iletişim:</strong> <a href="mailto:hedef5839@gmail.com">hedef5839@gmail.com</a></li>
+  <li><strong>Yanıt süresi:</strong> Tüm talepleriniz KVKK md. 13/2 gereği en geç <strong>30 gün</strong> içinde sonuçlandırılır.</li>
 </ul>
 
-<!-- 7. KULLANICI HAKLARI -->
-<h2>7. Kullanıcı Hakları</h2>
-<p>Kullanıcılarımız aşağıdaki haklara sahiptir:</p>
+<h3>8.2 İzinleri Geri Alma</h3>
+<p>
+  Cihazınızın ayarlarından konum, bildirim, kamera ve fiziksel aktivite (aktivite tanıma) izinlerini istediğiniz zaman geri alabilirsiniz. İzinlerin geri alınması ilgili işlevleri etkileyebilir (örn. konum izni olmadan namaz vakitleri yalnızca manuel şehir seçimiyle hesaplanır; aktivite tanıma izni olmadan adım sayar çalışmaz).
+</p>
 
-<h3>7.1 Veri Erişimi</h3>
-<p>Uygulama içindeki tüm verilerinizi doğrudan görebilir ve inceleyebilirsiniz. Verileriniz şeffaf bir şekilde uygulama arayüzünde sunulmaktadır.</p>
-
-<h3>7.2 Veri Silme</h3>
-<p>Verilerinizi silmek için:</p>
-<ul>
-  <li><strong>Uygulama içinden:</strong> İlgili bölümlerdeki silme/sıfırlama seçeneklerini kullanabilirsiniz.</li>
-  <li><strong>Hesap silme:</strong> Hesabınızı ve tüm bulut verilerinizi kalıcı olarak silmek için aşağıdaki iletişim adresinden bize ulaşabilirsiniz.</li>
-  <li><strong>Uygulamayı kaldırma:</strong> Uygulamayı cihazınızdan kaldırdığınızda tüm yerel veriler otomatik olarak silinir.</li>
-</ul>
-
-<h3>7.3 Veri Taşınabilirliği</h3>
-<p>Verileriniz Firebase üzerinde kullanıcı kimliğinize bağlı olarak saklanır. Veri dışa aktarım talepleriniz için aşağıdaki iletişim bilgilerinden bize ulaşabilirsiniz.</p>
-
-<h3>7.4 İzinleri Geri Alma</h3>
-<p>Cihazınızın ayarlarından konum, bildirim ve fotoğraf galerisi izinlerini istediğiniz zaman geri alabilirsiniz. İzinlerin geri alınması uygulamanın temel işlevlerini etkileyebilir (örn. konum izni olmadan namaz vakitleri yalnızca manuel şehir seçimiyle hesaplanır).</p>
-
-<!-- 8. ÇEREZLER VE İZLEME -->
-<h2>8. Çerezler ve İzleme</h2>
+<!-- 9. ÇEREZLER VE İZLEME -->
+<h2>9. Çerezler ve İzleme</h2>
 <p>Sebat bir mobil uygulamadır ve <strong>çerez (cookie) kullanmaz</strong>. Kullanıcı davranışı izleme, parmak izi (fingerprinting) veya reklam izleme teknolojileri <strong>kullanılmamaktadır</strong>.</p>
 
-<!-- 9. ÇOCUKLARIN GİZLİLİĞİ -->
-<h2>9. Çocukların Gizliliği</h2>
-<p>Sebat, genel kitleye yönelik bir uygulamadır ve özellikle 13 yaşın altındaki çocuklara yönelik tasarlanmamıştır. 13 yaşın altındaki kullanıcılardan bilerek kişisel veri toplamayız. Ebeveynler veya yasal vasiler, çocuklarının kişisel veri paylaştığını fark ederlerse bizimle iletişime geçebilirler ve ilgili veriler derhal silinecektir.</p>
+<!-- 10. ÇOCUKLARIN GİZLİLİĞİ -->
+<h2>10. Çocukların Gizliliği</h2>
+<p>
+  Sebat genel kitleye yöneliktir ve özellikle 13 yaş altı çocuklara yönelik tasarlanmamıştır. 13 yaşın altındaki kullanıcılardan bilerek kişisel veri toplamayız. Ebeveynler veya yasal vasiler, çocuklarının kişisel veri paylaştığını fark ederlerse <a href="mailto:hedef5839@gmail.com">hedef5839@gmail.com</a> üzerinden bizimle iletişime geçebilir; ilgili veriler derhal silinecektir.
+</p>
 
-<!-- 10. ANDROID İZİNLERİ -->
-<h2>10. Uygulama İzinleri</h2>
+<!-- 11. UYGULAMA İZİNLERİ -->
+<h2>11. Uygulama İzinleri</h2>
 <p>Uygulama aşağıdaki Android izinlerini kullanır:</p>
 
 <table>
   <tr><th>İzin</th><th>Kullanım Amacı</th></tr>
   <tr><td><strong>Konum</strong> (Hassas ve Yaklaşık)</td><td>Namaz vakitlerinin bulunduğunuz konuma göre hesaplanması</td></tr>
-  <tr><td><strong>İnternet</strong></td><td>Firebase ile veri senkronizasyonu</td></tr>
+  <tr><td><strong>İnternet</strong></td><td>Firebase ile şifrelenmiş veri senkronizasyonu, Drive yedek</td></tr>
   <tr><td><strong>Bildirimler</strong></td><td>Namaz vakti ve hatırlatma bildirimleri</td></tr>
-  <tr><td><strong>Kesin Alarm</strong></td><td>Ezan bildirimlerinin dakika hassasiyetinde gönderilmesi</td></tr>
-  <tr><td><strong>Ön Plan Servisi</strong></td><td>Namaz vakti geri sayım çubuğunun sürekli gösterilmesi (Android)</td></tr>
+  <tr><td><strong>Kesin Alarm</strong> (SCHEDULE_EXACT_ALARM)</td><td>Ezan bildirimlerinin dakika hassasiyetinde tetiklenmesi</td></tr>
+  <tr><td><strong>Ön Plan Servisi</strong></td><td>Namaz vakti geri sayım çubuğu ve adım sayar arka plan çalışması</td></tr>
+  <tr><td><strong>Aktivite Tanıma</strong> (ACTIVITY_RECOGNITION)</td><td>Adım sayar için yürüyüş tanıma — veri cihazda kalır, E2EE ile yedeklenir</td></tr>
+  <tr><td><strong>Kamera</strong></td><td>Yalnızca Kitaplık'ta kitap kapağı fotoğrafı çekmek için, siz başlattığınızda — görsel cihazda kalır, sunucuya yüklenmez</td></tr>
   <tr><td><strong>Titreşim</strong></td><td>Bildirim ve geri bildirim titreşimleri</td></tr>
   <tr><td><strong>Ekranı Açık Tutma</strong></td><td>Zamanlayıcı kullanımı sırasında ekranın kapanmaması</td></tr>
-  <tr><td><strong>Fotoğraf Galerisi</strong></td><td>Kitaplık bölümünde kitap kapağı görseli seçme</td></tr>
-  <tr><td><strong>Ses Çalma</strong></td><td>Odaklanma oturumları sırasında arka plan ortam sesleri çalma (ses kaydı yapılmaz)</td></tr>
+  <tr><td><strong>Fotoğraf Seçici (sistem)</strong></td><td>Kitaplık'ta kitap kapağı seçmek için Android Fotoğraf Seçici kullanılır — ayrı galeri/depolama izni istenmez, yalnızca seçtiğiniz görsele erişilir (sunucuya yüklenmez)</td></tr>
   <tr><td><strong>Önyükleme Tamamlandı</strong></td><td>Cihaz yeniden başlatıldığında bildirimlerin yeniden zamanlanması</td></tr>
 </table>
 
-<p>Tüm izinler yalnızca belirtilen amaçlar doğrultusunda kullanılır. Arka planda konum takibi yapılmaz.</p>
+<p>Tüm izinler yalnızca belirtilen amaçlar doğrultusunda kullanılır. <strong>Arka planda konum takibi yapılmaz.</strong></p>
 
-<!-- 11. DEĞİŞİKLİKLER -->
-<h2>11. Politika Değişiklikleri</h2>
+<!-- 12. POLİTİKA DEĞİŞİKLİKLERİ -->
+<h2>12. Politika Değişiklikleri</h2>
 <p>Bu gizlilik politikası zaman zaman güncellenebilir. Önemli değişiklikler yapıldığında:</p>
 <ul>
   <li>Bu sayfadaki "Son güncelleme" tarihi değiştirilecektir.</li>
   <li>Önemli değişiklikler uygulama içi bildirimle duyurulabilir.</li>
 </ul>
-<p>Politikanın güncel halini her zaman bu sayfadan inceleyebilirsiniz.</p>
 
-<!-- 12. İLETİŞİM -->
-<h2>12. İletişim</h2>
-<p>Gizlilik politikamız hakkında sorularınız, veri silme talepleriniz veya geri bildirimleriniz için bizimle iletişime geçebilirsiniz:</p>
+<!-- 13. İLETİŞİM -->
+<h2>13. İletişim</h2>
+<p>Gizlilik politikamız hakkında sorularınız, veri silme talepleriniz veya KVKK kapsamındaki başvurularınız için bize ulaşabilirsiniz:</p>
 
 <div class="highlight">
-  <strong>Geliştirici:</strong> Sebat<br>
-  <strong>E-posta:</strong> <a href="mailto:gonlumehudustu@gmail.com">gonlumehudustu@gmail.com</a><br>
-  <strong>Uygulama:</strong> Sebat — İslami Kişisel Gelişim<br>
-  <strong>Paket Adı:</strong> com.sebat.app
+  <strong>Geliştirici / Veri Sorumlusu:</strong> Halil İbrahim<br>
+  <strong>E-posta:</strong> <a href="mailto:hedef5839@gmail.com">hedef5839@gmail.com</a><br>
+  <strong>Uygulama:</strong> Sebat — İslâmi Kişisel Gelişim<br>
+  <strong>Paket Adı:</strong> com.halilibrahim49.Sebat
 </div>
 
-<p>Veri silme talepleriniz en geç <strong>30 gün</strong> içinde işleme alınacaktır.</p>
+<p>Veri silme ve KVKK başvurularınız <strong>30 gün</strong> içinde işleme alınır.</p>
 
-<!-- 13. YASAL DAYANAK -->
-<h2>13. Yasal Dayanak</h2>
+<!-- 14. YASAL DAYANAK -->
+<h2>14. Yasal Dayanak</h2>
 <p>Bu gizlilik politikası aşağıdaki yasal düzenlemelere uygun olarak hazırlanmıştır:</p>
 <ul>
-  <li><strong>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK)</strong> — Türkiye</li>
+  <li><strong>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK)</strong> — Türkiye Cumhuriyeti</li>
   <li><strong>Avrupa Genel Veri Koruma Tüzüğü (GDPR)</strong> — AB vatandaşları için</li>
   <li><strong>Google Play Geliştirici Program Politikaları</strong></li>
+  <li><strong>Google API Hizmetleri Kullanıcı Verisi Politikası</strong> (Drive App-Data kullanımı için)</li>
 </ul>
 
 </div>
 
 <footer>
   <p>
-    <strong>Sebat</strong> — İslami Kişisel Gelişim Uygulaması<br>
+    <strong>Sebat</strong> — İslâmi Kişisel Gelişim Uygulaması<br>
     &copy; 2026 Tüm hakları saklıdır.<br>
-    <a href="mailto:gonlumehudustu@gmail.com">gonlumehudustu@gmail.com</a>
+    <a href="mailto:hedef5839@gmail.com">hedef5839@gmail.com</a>
   </p>
 </footer>
 
